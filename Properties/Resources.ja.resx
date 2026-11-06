@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MissingSuffix" xml:space="preserve">
+    <value>  (見つかりません)</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>お気に入り</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="LeftTitle" xml:space="preserve">
+    <value>リンクを作成する場所のフォルダー（ここにフォルダーをドロップ）</value>
+  </data>
+  <data name="RightTitle" xml:space="preserve">
+    <value>実際のファイルまたはフォルダー（ここにドロップ）</value>
+  </data>
+  <data name="AddFolders" xml:space="preserve">
+    <value>フォルダーを追加…</value>
+  </data>
+  <data name="AddFiles" xml:space="preserve">
+    <value>ファイルを追加…</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="Replace" xml:space="preserve">
+    <value>置換…</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="Hint" xml:space="preserve">
+    <value>実行すると、右側の各項目が左側の各フォルダー内にリンクされます（リンク数は 右の項目数 × 左のフォルダー数）。ツリーで項目またはグループを選び、[編集]（または F2 キー）でパスを変更できます。[置換…] はその側のすべてのパスの一部の文字列をまとめて置き換え、Delete キーで選択を削除します。</value>
+  </data>
+  <data name="LinkType" xml:space="preserve">
+    <value>リンクの種類</value>
+  </data>
+  <data name="OnExists" xml:space="preserve">
+    <value>同名のものが既にある場合</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>再確認</value>
+  </data>
+  <data name="ColLink" xml:space="preserve">
+    <value>リンク（作成先）</value>
+  </data>
+  <data name="ColSource" xml:space="preserve">
+    <value>リンク先（実際の項目）</value>
+  </data>
+  <data name="ColKind" xml:space="preserve">
+    <value>種類</value>
+  </data>
+  <data name="ColStatus" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="ColResult" xml:space="preserve">
+    <value>結果</value>
+  </data>
+  <data name="RunAll" xml:space="preserve">
+    <value>すべてのリンクを作成</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="KindSymbolic" xml:space="preserve">
+    <value>シンボリックリンク</value>
+  </data>
+  <data name="KindHard" xml:space="preserve">
+    <value>ハードリンク</value>
+  </data>
+  <data name="KindJunction" xml:space="preserve">
+    <value>ジャンクション</value>
+  </data>
+  <data name="ModeSymbolic" xml:space="preserve">
+    <value>シンボリックリンク（管理者権限または開発者モードが必要）</value>
+  </data>
+  <data name="ModeJunctionHard" xml:space="preserve">
+    <value>フォルダーはジャンクション、ファイルはハードリンク（管理者権限不要。ハードリンクは同じドライブ内のみ）</value>
+  </data>
+  <data name="PolicySkip" xml:space="preserve">
+    <value>スキップ</value>
+  </data>
+  <data name="PolicyOverwrite" xml:space="preserve">
+    <value>上書き</value>
+  </data>
+  <data name="PolicyBackup" xml:space="preserve">
+    <value>バックアップしてから置換</value>
+  </data>
+  <data name="PlanSummary" xml:space="preserve">
+    <value>作成するリンク: 合計 {0} 件（{1} 項目 × {2} フォルダー）    新規 {3}、既存 {4}、実行不可 {5}</value>
+  </data>
+  <data name="RejectedItems" xml:space="preserve">
+    <value>{0} 件は追加されませんでした。左側には存在するフォルダーのみ、右側には存在するファイルまたはフォルダーのみ追加できます。</value>
+  </data>
+  <data name="EditPathPrompt" xml:space="preserve">
+    <value>パスを編集:</value>
+  </data>
+  <data name="EditGroupPrompt" xml:space="preserve">
+    <value>このグループのパスを編集（グループ内のすべての項目が新しい親フォルダーへまとめて移動します）:</value>
+  </data>
+  <data name="InvalidFullPath" xml:space="preserve">
+    <value>完全なパスではありません（H:\mkt\xxx のようにドライブ文字が必要です）。</value>
+  </data>
+  <data name="RootGroupNotEditable" xml:space="preserve">
+    <value>ドライブ直下のグループはまとめて編集できません。個々の項目を編集してください。</value>
+  </data>
+  <data name="SelectItemFirst" xml:space="preserve">
+    <value>先にツリーで項目またはグループ（親フォルダー）を選択してください。</value>
+  </data>
+  <data name="ReplaceFindPrompt" xml:space="preserve">
+    <value>パス内のこの文字列を…（大文字小文字は区別しません。この側のすべてのパスが対象です）</value>
+  </data>
+  <data name="ReplaceWithPrompt" xml:space="preserve">
+    <value>…次の文字列に（「{0}」を何に置き換えますか。空でもかまいません）:</value>
+  </data>
+  <data name="ReplacedCount" xml:space="preserve">
+    <value>{0} 件のパスを置換しました。</value>
+  </data>
+  <data name="NeedFavoriteName" xml:space="preserve">
+    <value>先に[お気に入り]ボックスに名前を入力してください。</value>
+  </data>
+  <data name="ConfirmDeleteFavorite" xml:space="preserve">
+    <value>お気に入り「{0}」を削除しますか?</value>
+  </data>
+  <data name="SaveFavoriteFailed" xml:space="preserve">
+    <value>お気に入りを保存できませんでした: {0}</value>
+  </data>
+  <data name="NothingToRunEmpty" xml:space="preserve">
+    <value>先に、左側にリンクを作成するフォルダー、右側に実際のファイルまたはフォルダーを追加してください。</value>
+  </data>
+  <data name="NoRunnable" xml:space="preserve">
+    <value>作成できるリンクがありません。表の[状態]列を確認してください。</value>
+  </data>
+  <data name="ConfirmOverwrite" xml:space="preserve">
+    <value>[上書き]は、同名の既存のリンクとファイルを削除します。空でない実際のフォルダーは削除されません（その場合は[バックアップしてから置換]を使ってください）。続行しますか?</value>
+  </data>
+  <data name="RunSummary" xml:space="preserve">
+    <value>完了: 作成 {0}、スキップ {1}、失敗または未実行 {2}。</value>
+  </data>
+  <data name="NeedPrivilegeHint" xml:space="preserve">
+    <value> シンボリックリンクには管理者権限または Windows の開発者モードが必要です。リンクの種類を「ジャンクション + ハードリンク」に変更して再試行することもできます。</value>
+  </data>
+  <data name="StatusReady" xml:space="preserve">
+    <value>作成されます</value>
+  </data>
+  <data name="StatusAlreadyLinked" xml:space="preserve">
+    <value>すでに同じリンクです（スキップされます）</value>
+  </data>
+  <data name="StatusExists" xml:space="preserve">
+    <value>同名のものが存在します（設定に従って処理）</value>
+  </data>
+  <data name="StatusSourceMissing" xml:space="preserve">
+    <value>実際の項目が見つかりません</value>
+  </data>
+  <data name="StatusDestinationMissing" xml:space="preserve">
+    <value>リンク先フォルダーが見つかりません</value>
+  </data>
+  <data name="StatusNameConflict" xml:space="preserve">
+    <value>このフォルダー内の別の項目と同名</value>
+  </data>
+  <data name="StatusOverlap" xml:space="preserve">
+    <value>リンクと実際の項目が重なっています</value>
+  </data>
+  <data name="StatusHardLinkCrossVolume" xml:space="preserve">
+    <value>ハードリンクは別のドライブにまたがれません</value>
+  </data>
+  <data name="StatusInvalidPath" xml:space="preserve">
+    <value>パスが無効です</value>
+  </data>
+  <data name="ResCreated" xml:space="preserve">
+    <value>作成しました</value>
+  </data>
+  <data name="ResCreatedBackup" xml:space="preserve">
+    <value>作成しました（元の項目は {0} として保存）</value>
+  </data>
+  <data name="ResCreatedOverwrite" xml:space="preserve">
+    <value>作成しました（既存の項目を置換）</value>
+  </data>
+  <data name="ResSkippedExists" xml:space="preserve">
+    <value>スキップ: 既に存在します</value>
+  </data>
+  <data name="ResSkippedSame" xml:space="preserve">
+    <value>スキップ: すでにこのターゲットへのリンクです</value>
+  </data>
+  <data name="ResTargetMissing" xml:space="preserve">
+    <value>失敗: 実際の項目が見つかりません</value>
+  </data>
+  <data name="ResInvalidKind" xml:space="preserve">
+    <value>失敗: リンクの種類がターゲットに合いません</value>
+  </data>
+  <data name="ResOverlap" xml:space="preserve">
+    <value>失敗: リンクと実際の項目が重なっています</value>
+  </data>
+  <data name="ResRefusedDirectory" xml:space="preserve">
+    <value>置換しませんでした: 内容のある実際のフォルダーがあります（[バックアップしてから置換]を使ってください）</value>
+  </data>
+  <data name="ResNeedPrivilege" xml:space="preserve">
+    <value>失敗: 管理者権限または開発者モードが必要です</value>
+  </data>
+  <data name="ResBlocked" xml:space="preserve">
+    <value>未実行: {0}</value>
+  </data>
+  <data name="ResFailed" xml:space="preserve">
+    <value>失敗: {0}</value>
+  </data>
+  <data name="RootGroup" xml:space="preserve">
+    <value>(ドライブ直下)</value>
+  </data>
+  <data name="PairingLabel" xml:space="preserve">
+    <value>対応づけ</value>
+  </data>
+  <data name="PairingAll" xml:space="preserve">
+    <value>総当たり: 右の全項目を左の全フォルダーへ</value>
+  </data>
+  <data name="PairingManual" xml:space="preserve">
+    <value>手動: どの項目をどのフォルダーに入れるかを自分で指定</value>
+  </data>
+  <data name="PairSelected" xml:space="preserve">
+    <value>選択を対応づけ</value>
+  </data>
+  <data name="PairRemove" xml:space="preserve">
+    <value>選択した対応を削除</value>
+  </data>
+  <data name="HintManual" xml:space="preserve">
+    <value>左側のフォルダー（またはグループ）と右側の項目（またはグループ）を選び、[選択を対応づけ]をクリックすると、選んだ各項目が選んだ各フォルダーにリンクされます。別の選択で繰り返して下の一覧を作ります。一覧は実際に作成されるリンクそのものです。行を選んで[選択した対応を削除]をクリックすると取り除けます。編集・置換…・削除を行うと、対応もパスに合わせて更新されます。</value>
+  </data>
+  <data name="PairSelectBoth" xml:space="preserve">
+    <value>先に、左側のフォルダー（またはグループ）と右側の項目（またはグループ）を選択してください。</value>
+  </data>
+  <data name="PairsAdded" xml:space="preserve">
+    <value>{0} 件の対応を追加しました。</value>
+  </data>
+  <data name="PlanSummaryManual" xml:space="preserve">
+    <value>作成するリンク: 合計 {0} 件（手動で指定した対応）    新規 {1}、既存 {2}、実行不可 {3}</value>
+  </data>
+  <data name="NothingToRunManual" xml:space="preserve">
+    <value>対応がまだありません。左側のフォルダーと右側の項目を選び、[選択を対応づけ]をクリックしてください。</value>
+  </data>
+  <data name="AboutButton" xml:space="preserve">
+    <value>バージョン情報</value>
+  </data>
+  <data name="AboutDescription" xml:space="preserve">
+    <value>シンボリックリンク、ジャンクション、ハードリンクをまとめて作成します。実際のファイルやフォルダーを選んだすべての場所にリンクすることも、手動で対応づけることもできます。</value>
+  </data>
+  <data name="AboutVersion" xml:space="preserve">
+    <value>バージョン {0}</value>
+  </data>
+  <data name="AboutCredits" xml:space="preserve">
+    <value>MahApps.Metro と MahApps.Metro.IconPacks（MIT ライセンス）を使用しています。</value>
+  </data>
+  <data name="AboutProject" xml:space="preserve">
+    <value>プロジェクトページ</value>
+  </data>
+  <data name="AboutCheckUpdates" xml:space="preserve">
+    <value>更新を確認</value>
+  </data>
+  <data name="UpdateChecking" xml:space="preserve">
+    <value>確認中…</value>
+  </data>
+  <data name="UpdateUpToDate" xml:space="preserve">
+    <value>最新バージョン（{0}）です。</value>
+  </data>
+  <data name="UpdateAvailable" xml:space="preserve">
+    <value>新しいバージョン {0} があります（現在 {1}）。</value>
+  </data>
+  <data name="UpdateDownload" xml:space="preserve">
+    <value>ダウンロードページを開く</value>
+  </data>
+  <data name="UpdateFailed" xml:space="preserve">
+    <value>更新を確認できませんでした。インターネット接続を確認してください。</value>
+  </data>
+  <data name="UpdatePromptOpen" xml:space="preserve">
+    <value>新しいバージョン {0} があります（現在 {1}）。ダウンロードページを開きますか？</value>
+  </data>
+</root>

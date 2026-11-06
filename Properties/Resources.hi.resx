@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MissingSuffix" xml:space="preserve">
+    <value>  (नहीं मिला)</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>पसंदीदा</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>सहेजें</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>हटाएँ</value>
+  </data>
+  <data name="LeftTitle" xml:space="preserve">
+    <value>वे फ़ोल्डर जहाँ लिंक बनाए जाएँगे (फ़ोल्डर यहाँ खींचकर छोड़ें)</value>
+  </data>
+  <data name="RightTitle" xml:space="preserve">
+    <value>वास्तविक फ़ाइलें या फ़ोल्डर (यहाँ खींचकर छोड़ें)</value>
+  </data>
+  <data name="AddFolders" xml:space="preserve">
+    <value>फ़ोल्डर जोड़ें…</value>
+  </data>
+  <data name="AddFiles" xml:space="preserve">
+    <value>फ़ाइलें जोड़ें…</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>संपादित करें</value>
+  </data>
+  <data name="Replace" xml:space="preserve">
+    <value>बदलें…</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>साफ़ करें</value>
+  </data>
+  <data name="Hint" xml:space="preserve">
+    <value>चलाने पर दाईं ओर का हर आइटम बाईं ओर के हर फ़ोल्डर में लिंक होगा (कुल लिंक = दाईं ओर के आइटम × बाईं ओर के फ़ोल्डर)। ट्री में कोई आइटम या समूह चुनें, फिर पथ बदलने के लिए संपादित करें पर क्लिक करें (या F2 दबाएँ)। बदलें… उस ओर के सभी पथों में एक टेक्स्ट-अंश बदलता है; Delete कुंजी चयन हटाती है।</value>
+  </data>
+  <data name="LinkType" xml:space="preserve">
+    <value>लिंक प्रकार</value>
+  </data>
+  <data name="OnExists" xml:space="preserve">
+    <value>यदि लिंक पहले से मौजूद हो</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>फिर से जाँचें</value>
+  </data>
+  <data name="ColLink" xml:space="preserve">
+    <value>लिंक (जहाँ बनेगा)</value>
+  </data>
+  <data name="ColSource" xml:space="preserve">
+    <value>लक्ष्य (वास्तविक आइटम)</value>
+  </data>
+  <data name="ColKind" xml:space="preserve">
+    <value>प्रकार</value>
+  </data>
+  <data name="ColStatus" xml:space="preserve">
+    <value>स्थिति</value>
+  </data>
+  <data name="ColResult" xml:space="preserve">
+    <value>परिणाम</value>
+  </data>
+  <data name="RunAll" xml:space="preserve">
+    <value>सभी लिंक बनाएं</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>ठीक है</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>रद्द करें</value>
+  </data>
+  <data name="KindSymbolic" xml:space="preserve">
+    <value>सिम्बॉलिक लिंक</value>
+  </data>
+  <data name="KindHard" xml:space="preserve">
+    <value>हार्ड लिंक</value>
+  </data>
+  <data name="KindJunction" xml:space="preserve">
+    <value>जंक्शन</value>
+  </data>
+  <data name="ModeSymbolic" xml:space="preserve">
+    <value>सिम्बॉलिक लिंक (व्यवस्थापक अधिकार या डेवलपर मोड आवश्यक)</value>
+  </data>
+  <data name="ModeJunctionHard" xml:space="preserve">
+    <value>फ़ोल्डर के लिए जंक्शन + फ़ाइलों के लिए हार्ड लिंक (व्यवस्थापक आवश्यक नहीं; हार्ड लिंक एक ही ड्राइव पर होने चाहिए)</value>
+  </data>
+  <data name="PolicySkip" xml:space="preserve">
+    <value>छोड़ें</value>
+  </data>
+  <data name="PolicyOverwrite" xml:space="preserve">
+    <value>अधिलेखित करें</value>
+  </data>
+  <data name="PolicyBackup" xml:space="preserve">
+    <value>बैकअप लेकर बदलें</value>
+  </data>
+  <data name="PlanSummary" xml:space="preserve">
+    <value>बनने वाले लिंक: कुल {0} ({1} आइटम × {2} फ़ोल्डर)    नए {3}, पहले से मौजूद {4}, अवरुद्ध {5}</value>
+  </data>
+  <data name="RejectedItems" xml:space="preserve">
+    <value>{0} आइटम जोड़े नहीं गए: बाईं ओर केवल मौजूदा फ़ोल्डर और दाईं ओर केवल मौजूदा फ़ाइलें या फ़ोल्डर स्वीकार किए जाते हैं।</value>
+  </data>
+  <data name="EditPathPrompt" xml:space="preserve">
+    <value>पथ संपादित करें:</value>
+  </data>
+  <data name="EditGroupPrompt" xml:space="preserve">
+    <value>इस समूह का पथ संपादित करें (समूह के सभी आइटम एक साथ नए मूल फ़ोल्डर में चले जाएँगे):</value>
+  </data>
+  <data name="InvalidFullPath" xml:space="preserve">
+    <value>यह पूरा पथ नहीं है (ड्राइव अक्षर आवश्यक है, जैसे H:\mkt\xxx)।</value>
+  </data>
+  <data name="RootGroupNotEditable" xml:space="preserve">
+    <value>ड्राइव रूट वाले समूह को एक साथ संपादित नहीं किया जा सकता; अलग-अलग आइटम संपादित करें।</value>
+  </data>
+  <data name="SelectItemFirst" xml:space="preserve">
+    <value>पहले ट्री में कोई आइटम या समूह (मूल फ़ोल्डर) चुनें।</value>
+  </data>
+  <data name="ReplaceFindPrompt" xml:space="preserve">
+    <value>पथों में यह टेक्स्ट-अंश बदलें… (अक्षर-भेद नहीं; इस ओर के सभी पथों पर लागू)</value>
+  </data>
+  <data name="ReplaceWithPrompt" xml:space="preserve">
+    <value>…इससे (“{0}” को क्या बनाना है? खाली भी हो सकता है):</value>
+  </data>
+  <data name="ReplacedCount" xml:space="preserve">
+    <value>{0} आइटम का पथ बदला गया।</value>
+  </data>
+  <data name="NeedFavoriteName" xml:space="preserve">
+    <value>पहले पसंदीदा बॉक्स में एक नाम लिखें।</value>
+  </data>
+  <data name="ConfirmDeleteFavorite" xml:space="preserve">
+    <value>पसंदीदा “{0}” हटाएँ?</value>
+  </data>
+  <data name="SaveFavoriteFailed" xml:space="preserve">
+    <value>पसंदीदा सहेजे नहीं जा सके: {0}</value>
+  </data>
+  <data name="NothingToRunEmpty" xml:space="preserve">
+    <value>पहले बाईं ओर वे फ़ोल्डर जोड़ें जहाँ लिंक बनाने हैं, और दाईं ओर वास्तविक फ़ाइलें या फ़ोल्डर।</value>
+  </data>
+  <data name="NoRunnable" xml:space="preserve">
+    <value>ऐसा कोई लिंक नहीं है जो बनाया जा सके। तालिका का स्थिति कॉलम देखें।</value>
+  </data>
+  <data name="ConfirmOverwrite" xml:space="preserve">
+    <value>“अधिलेखित करें” उसी नाम के मौजूदा लिंक और फ़ाइलें हटा देता है। खाली न होने वाला वास्तविक फ़ोल्डर कभी नहीं हटाया जाता (उनके लिए “बैकअप लेकर बदलें” चुनें)। जारी रखें?</value>
+  </data>
+  <data name="RunSummary" xml:space="preserve">
+    <value>पूर्ण: {0} बनाए गए, {1} छोड़े गए, {2} विफल या नहीं चलाए गए।</value>
+  </data>
+  <data name="NeedPrivilegeHint" xml:space="preserve">
+    <value> सिम्बॉलिक लिंक के लिए व्यवस्थापक अधिकार या Windows डेवलपर मोड आवश्यक है; आप लिंक प्रकार को “जंक्शन + हार्ड लिंक” में बदलकर फिर कोशिश भी कर सकते हैं।</value>
+  </data>
+  <data name="StatusReady" xml:space="preserve">
+    <value>बनाया जाएगा</value>
+  </data>
+  <data name="StatusAlreadyLinked" xml:space="preserve">
+    <value>पहले से यही लिंक (छोड़ा जाएगा)</value>
+  </data>
+  <data name="StatusExists" xml:space="preserve">
+    <value>नाम पहले से मौजूद है (चुने गए विकल्प के अनुसार)</value>
+  </data>
+  <data name="StatusSourceMissing" xml:space="preserve">
+    <value>वास्तविक आइटम नहीं मिला</value>
+  </data>
+  <data name="StatusDestinationMissing" xml:space="preserve">
+    <value>लिंक फ़ोल्डर नहीं मिला</value>
+  </data>
+  <data name="StatusNameConflict" xml:space="preserve">
+    <value>इस फ़ोल्डर के किसी अन्य आइटम का वही नाम</value>
+  </data>
+  <data name="StatusOverlap" xml:space="preserve">
+    <value>लिंक और वास्तविक आइटम आपस में ओवरलैप करते हैं</value>
+  </data>
+  <data name="StatusHardLinkCrossVolume" xml:space="preserve">
+    <value>हार्ड लिंक अलग ड्राइव के बीच नहीं बन सकते</value>
+  </data>
+  <data name="StatusInvalidPath" xml:space="preserve">
+    <value>अमान्य पथ</value>
+  </data>
+  <data name="ResCreated" xml:space="preserve">
+    <value>बनाया गया</value>
+  </data>
+  <data name="ResCreatedBackup" xml:space="preserve">
+    <value>बनाया गया (पुराना आइटम {0} के रूप में सुरक्षित)</value>
+  </data>
+  <data name="ResCreatedOverwrite" xml:space="preserve">
+    <value>बनाया गया (मौजूदा आइटम बदला गया)</value>
+  </data>
+  <data name="ResSkippedExists" xml:space="preserve">
+    <value>छोड़ा गया: पहले से मौजूद</value>
+  </data>
+  <data name="ResSkippedSame" xml:space="preserve">
+    <value>छोड़ा गया: पहले से इसी लक्ष्य से जुड़ा है</value>
+  </data>
+  <data name="ResTargetMissing" xml:space="preserve">
+    <value>विफल: वास्तविक आइटम नहीं मिला</value>
+  </data>
+  <data name="ResInvalidKind" xml:space="preserve">
+    <value>विफल: लिंक प्रकार लक्ष्य के अनुकूल नहीं है</value>
+  </data>
+  <data name="ResOverlap" xml:space="preserve">
+    <value>विफल: लिंक और वास्तविक आइटम ओवरलैप करते हैं</value>
+  </data>
+  <data name="ResRefusedDirectory" xml:space="preserve">
+    <value>बदला नहीं गया: वहाँ सामग्री वाला वास्तविक फ़ोल्डर है (“बैकअप लेकर बदलें” का उपयोग करें)</value>
+  </data>
+  <data name="ResNeedPrivilege" xml:space="preserve">
+    <value>विफल: व्यवस्थापक अधिकार या डेवलपर मोड आवश्यक</value>
+  </data>
+  <data name="ResBlocked" xml:space="preserve">
+    <value>नहीं चलाया गया: {0}</value>
+  </data>
+  <data name="ResFailed" xml:space="preserve">
+    <value>विफल: {0}</value>
+  </data>
+  <data name="RootGroup" xml:space="preserve">
+    <value>(ड्राइव रूट)</value>
+  </data>
+  <data name="PairingLabel" xml:space="preserve">
+    <value>जोड़ी बनाना</value>
+  </data>
+  <data name="PairingAll" xml:space="preserve">
+    <value>सब से सब: दाईं ओर का हर आइटम बाईं ओर के हर फ़ोल्डर में</value>
+  </data>
+  <data name="PairingManual" xml:space="preserve">
+    <value>मैन्युअल: मैं तय करता/करती हूँ कि कौन-सा आइटम किस फ़ोल्डर में जाए</value>
+  </data>
+  <data name="PairSelected" xml:space="preserve">
+    <value>चयनित को जोड़ें</value>
+  </data>
+  <data name="PairRemove" xml:space="preserve">
+    <value>चयनित जोड़ियाँ हटाएँ</value>
+  </data>
+  <data name="HintManual" xml:space="preserve">
+    <value>बाईं ओर एक फ़ोल्डर (या समूह) और दाईं ओर एक आइटम (या समूह) चुनें, फिर चयनित को जोड़ें पर क्लिक करें: चुना गया हर आइटम चुने गए हर फ़ोल्डर में लिंक होगा। नीचे की सूची बनाने के लिए अन्य चयनों के साथ दोहराएँ; यह ठीक वही लिंक दिखाती है जो बनेंगे। पंक्तियाँ चुनकर चयनित जोड़ियाँ हटाएँ पर क्लिक करने से वे हट जाती हैं। संपादित करें, बदलें… और हटाएँ जोड़ियों को पथों के साथ सुसंगत रखते हैं।</value>
+  </data>
+  <data name="PairSelectBoth" xml:space="preserve">
+    <value>पहले बाईं ओर एक फ़ोल्डर (या समूह) और दाईं ओर एक आइटम (या समूह) चुनें।</value>
+  </data>
+  <data name="PairsAdded" xml:space="preserve">
+    <value>{0} नई जोड़ी(याँ) जोड़ी गईं।</value>
+  </data>
+  <data name="PlanSummaryManual" xml:space="preserve">
+    <value>बनने वाले लिंक: कुल {0} (हाथ से चुनी जोड़ियाँ)    नए {1}, पहले से मौजूद {2}, अवरुद्ध {3}</value>
+  </data>
+  <data name="NothingToRunManual" xml:space="preserve">
+    <value>अभी कोई जोड़ी नहीं है। बाईं ओर एक फ़ोल्डर और दाईं ओर एक आइटम चुनें, फिर चयनित को जोड़ें पर क्लिक करें।</value>
+  </data>
+  <data name="AboutButton" xml:space="preserve">
+    <value>परिचय</value>
+  </data>
+  <data name="AboutDescription" xml:space="preserve">
+    <value>कई सिम्बॉलिक लिंक, जंक्शन और हार्ड लिंक एक साथ बनाएँ: हर वास्तविक फ़ाइल और फ़ोल्डर को हर चुने गए स्थान में लिंक करें, या उन्हें हाथ से जोड़ें।</value>
+  </data>
+  <data name="AboutVersion" xml:space="preserve">
+    <value>संस्करण {0}</value>
+  </data>
+  <data name="AboutCredits" xml:space="preserve">
+    <value>MahApps.Metro और MahApps.Metro.IconPacks (MIT लाइसेंस) से बना।</value>
+  </data>
+  <data name="AboutProject" xml:space="preserve">
+    <value>प्रोजेक्ट पेज</value>
+  </data>
+  <data name="AboutCheckUpdates" xml:space="preserve">
+    <value>अपडेट जाँचें</value>
+  </data>
+  <data name="UpdateChecking" xml:space="preserve">
+    <value>जाँच हो रही है…</value>
+  </data>
+  <data name="UpdateUpToDate" xml:space="preserve">
+    <value>आपके पास नवीनतम संस्करण ({0}) है।</value>
+  </data>
+  <data name="UpdateAvailable" xml:space="preserve">
+    <value>नया संस्करण {0} उपलब्ध है (आपके पास {1} है)।</value>
+  </data>
+  <data name="UpdateDownload" xml:space="preserve">
+    <value>डाउनलोड पेज खोलें</value>
+  </data>
+  <data name="UpdateFailed" xml:space="preserve">
+    <value>अपडेट की जाँच नहीं हो सकी। कृपया अपना इंटरनेट कनेक्शन जाँचें।</value>
+  </data>
+  <data name="UpdatePromptOpen" xml:space="preserve">
+    <value>नया संस्करण {0} उपलब्ध है (आपके पास {1} है)। डाउनलोड पेज खोलें?</value>
+  </data>
+</root>

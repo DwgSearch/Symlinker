@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MissingSuffix" xml:space="preserve">
+    <value>  (não encontrado)</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>Favoritos</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+  <data name="LeftTitle" xml:space="preserve">
+    <value>Pastas onde os links serão criados (solte pastas aqui)</value>
+  </data>
+  <data name="RightTitle" xml:space="preserve">
+    <value>Arquivos ou pastas reais (solte aqui)</value>
+  </data>
+  <data name="AddFolders" xml:space="preserve">
+    <value>Adicionar pastas…</value>
+  </data>
+  <data name="AddFiles" xml:space="preserve">
+    <value>Adicionar arquivos…</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Replace" xml:space="preserve">
+    <value>Substituir…</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Limpar</value>
+  </data>
+  <data name="Hint" xml:space="preserve">
+    <value>Ao executar, cada item da direita é vinculado em cada pasta da esquerda (no total: itens da direita × pastas da esquerda). Selecione um item ou grupo em uma árvore e clique em Editar (ou pressione F2) para alterar o caminho. Substituir… troca um trecho de texto em todos os caminhos desse lado; a tecla Delete remove a seleção.</value>
+  </data>
+  <data name="LinkType" xml:space="preserve">
+    <value>Tipo de link</value>
+  </data>
+  <data name="OnExists" xml:space="preserve">
+    <value>Se o link já existir</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Verificar novamente</value>
+  </data>
+  <data name="ColLink" xml:space="preserve">
+    <value>Link (onde será criado)</value>
+  </data>
+  <data name="ColSource" xml:space="preserve">
+    <value>Aponta para (item real)</value>
+  </data>
+  <data name="ColKind" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="ColStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ColResult" xml:space="preserve">
+    <value>Resultado</value>
+  </data>
+  <data name="RunAll" xml:space="preserve">
+    <value>Criar todos os links</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="KindSymbolic" xml:space="preserve">
+    <value>Link simbólico</value>
+  </data>
+  <data name="KindHard" xml:space="preserve">
+    <value>Link físico</value>
+  </data>
+  <data name="KindJunction" xml:space="preserve">
+    <value>Junção</value>
+  </data>
+  <data name="ModeSymbolic" xml:space="preserve">
+    <value>Links simbólicos (exigem direitos de administrador ou Modo de desenvolvedor)</value>
+  </data>
+  <data name="ModeJunctionHard" xml:space="preserve">
+    <value>Junções para pastas + links físicos para arquivos (sem administrador; links físicos devem ficar na mesma unidade)</value>
+  </data>
+  <data name="PolicySkip" xml:space="preserve">
+    <value>Ignorar</value>
+  </data>
+  <data name="PolicyOverwrite" xml:space="preserve">
+    <value>Sobrescrever</value>
+  </data>
+  <data name="PolicyBackup" xml:space="preserve">
+    <value>Fazer backup e substituir</value>
+  </data>
+  <data name="PlanSummary" xml:space="preserve">
+    <value>Links a criar: {0} no total ({1} itens × {2} pastas)    novos {3}, já existem {4}, bloqueados {5}</value>
+  </data>
+  <data name="RejectedItems" xml:space="preserve">
+    <value>{0} item(ns) não foram adicionados: a esquerda aceita apenas pastas existentes e a direita apenas arquivos ou pastas existentes.</value>
+  </data>
+  <data name="EditPathPrompt" xml:space="preserve">
+    <value>Editar caminho:</value>
+  </data>
+  <data name="EditGroupPrompt" xml:space="preserve">
+    <value>Editar o caminho deste grupo (todos os itens do grupo vão juntos para a nova pasta pai):</value>
+  </data>
+  <data name="InvalidFullPath" xml:space="preserve">
+    <value>Este não é um caminho completo (é necessária uma letra de unidade, por exemplo H:\mkt\xxx).</value>
+  </data>
+  <data name="RootGroupNotEditable" xml:space="preserve">
+    <value>O grupo da raiz da unidade não pode ser editado como um todo; edite os itens individualmente.</value>
+  </data>
+  <data name="SelectItemFirst" xml:space="preserve">
+    <value>Selecione primeiro um item ou grupo (pasta pai) na árvore.</value>
+  </data>
+  <data name="ReplaceFindPrompt" xml:space="preserve">
+    <value>Substituir este trecho de texto nos caminhos… (sem diferenciar maiúsculas de minúsculas; vale para todos os caminhos deste lado)</value>
+  </data>
+  <data name="ReplaceWithPrompt" xml:space="preserve">
+    <value>…por (em que “{0}” deve se tornar? pode ficar vazio):</value>
+  </data>
+  <data name="ReplacedCount" xml:space="preserve">
+    <value>Caminho substituído em {0} item(ns).</value>
+  </data>
+  <data name="NeedFavoriteName" xml:space="preserve">
+    <value>Digite primeiro um nome na caixa Favoritos.</value>
+  </data>
+  <data name="ConfirmDeleteFavorite" xml:space="preserve">
+    <value>Excluir o favorito “{0}”?</value>
+  </data>
+  <data name="SaveFavoriteFailed" xml:space="preserve">
+    <value>Não foi possível salvar os favoritos: {0}</value>
+  </data>
+  <data name="NothingToRunEmpty" xml:space="preserve">
+    <value>Primeiro adicione à esquerda as pastas onde criar os links e à direita os arquivos ou pastas reais.</value>
+  </data>
+  <data name="NoRunnable" xml:space="preserve">
+    <value>Não há links que possam ser criados. Veja a coluna Status da tabela.</value>
+  </data>
+  <data name="ConfirmOverwrite" xml:space="preserve">
+    <value>“Sobrescrever” exclui links e arquivos existentes com o mesmo nome. Uma pasta real que não esteja vazia nunca é excluída (para essas, use “Fazer backup e substituir”). Continuar?</value>
+  </data>
+  <data name="RunSummary" xml:space="preserve">
+    <value>Concluído: {0} criados, {1} ignorados, {2} com falha ou não executados.</value>
+  </data>
+  <data name="NeedPrivilegeHint" xml:space="preserve">
+    <value> Links simbólicos exigem direitos de administrador ou o Modo de desenvolvedor do Windows; você também pode mudar o tipo de link para “Junções + links físicos” e tentar novamente.</value>
+  </data>
+  <data name="StatusReady" xml:space="preserve">
+    <value>Será criado</value>
+  </data>
+  <data name="StatusAlreadyLinked" xml:space="preserve">
+    <value>Já é este link (será ignorado)</value>
+  </data>
+  <data name="StatusExists" xml:space="preserve">
+    <value>O nome já existe (tratado conforme a opção)</value>
+  </data>
+  <data name="StatusSourceMissing" xml:space="preserve">
+    <value>Item real não encontrado</value>
+  </data>
+  <data name="StatusDestinationMissing" xml:space="preserve">
+    <value>Pasta do link não encontrada</value>
+  </data>
+  <data name="StatusNameConflict" xml:space="preserve">
+    <value>Mesmo nome de outro item nesta pasta</value>
+  </data>
+  <data name="StatusOverlap" xml:space="preserve">
+    <value>O link e o item real se sobrepõem</value>
+  </data>
+  <data name="StatusHardLinkCrossVolume" xml:space="preserve">
+    <value>Links físicos não podem cruzar unidades</value>
+  </data>
+  <data name="StatusInvalidPath" xml:space="preserve">
+    <value>Caminho inválido</value>
+  </data>
+  <data name="ResCreated" xml:space="preserve">
+    <value>Criado</value>
+  </data>
+  <data name="ResCreatedBackup" xml:space="preserve">
+    <value>Criado (item antigo mantido como {0})</value>
+  </data>
+  <data name="ResCreatedOverwrite" xml:space="preserve">
+    <value>Criado (item existente substituído)</value>
+  </data>
+  <data name="ResSkippedExists" xml:space="preserve">
+    <value>Ignorado: já existe</value>
+  </data>
+  <data name="ResSkippedSame" xml:space="preserve">
+    <value>Ignorado: já aponta para este destino</value>
+  </data>
+  <data name="ResTargetMissing" xml:space="preserve">
+    <value>Falha: item real não encontrado</value>
+  </data>
+  <data name="ResInvalidKind" xml:space="preserve">
+    <value>Falha: o tipo de link não serve para o destino</value>
+  </data>
+  <data name="ResOverlap" xml:space="preserve">
+    <value>Falha: o link e o item real se sobrepõem</value>
+  </data>
+  <data name="ResRefusedDirectory" xml:space="preserve">
+    <value>Não substituído: há uma pasta real com conteúdo (use “Fazer backup e substituir”)</value>
+  </data>
+  <data name="ResNeedPrivilege" xml:space="preserve">
+    <value>Falha: são necessários direitos de administrador ou o Modo de desenvolvedor</value>
+  </data>
+  <data name="ResBlocked" xml:space="preserve">
+    <value>Não executado: {0}</value>
+  </data>
+  <data name="ResFailed" xml:space="preserve">
+    <value>Falha: {0}</value>
+  </data>
+  <data name="RootGroup" xml:space="preserve">
+    <value>(raiz da unidade)</value>
+  </data>
+  <data name="PairingLabel" xml:space="preserve">
+    <value>Pareamento</value>
+  </data>
+  <data name="PairingAll" xml:space="preserve">
+    <value>Todos com todos: cada item da direita em cada pasta da esquerda</value>
+  </data>
+  <data name="PairingManual" xml:space="preserve">
+    <value>Manual: eu escolho qual item vai em qual pasta</value>
+  </data>
+  <data name="PairSelected" xml:space="preserve">
+    <value>Parear seleção</value>
+  </data>
+  <data name="PairRemove" xml:space="preserve">
+    <value>Remover pares selecionados</value>
+  </data>
+  <data name="HintManual" xml:space="preserve">
+    <value>Selecione uma pasta (ou um grupo) à esquerda e um item (ou um grupo) à direita e clique em Parear seleção: cada item escolhido é vinculado em cada pasta escolhida. Repita com outras seleções para montar a lista abaixo, que mostra exatamente os links que serão criados; selecione linhas e clique em Remover pares selecionados para descartá-las. Editar, Substituir… e Excluir mantêm os pares sincronizados com os caminhos.</value>
+  </data>
+  <data name="PairSelectBoth" xml:space="preserve">
+    <value>Primeiro selecione uma pasta (ou grupo) à esquerda e um item (ou grupo) à direita.</value>
+  </data>
+  <data name="PairsAdded" xml:space="preserve">
+    <value>{0} novo(s) par(es) adicionado(s).</value>
+  </data>
+  <data name="PlanSummaryManual" xml:space="preserve">
+    <value>Links a criar: {0} no total (pares escolhidos manualmente)    novos {1}, já existem {2}, bloqueados {3}</value>
+  </data>
+  <data name="NothingToRunManual" xml:space="preserve">
+    <value>Ainda não há pares. Selecione uma pasta à esquerda e um item à direita e clique em Parear seleção.</value>
+  </data>
+  <data name="AboutButton" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="AboutDescription" xml:space="preserve">
+    <value>Crie muitos links simbólicos, junções e links físicos de uma vez: vincule cada arquivo e pasta reais em cada local escolhido, ou pareie-os manualmente.</value>
+  </data>
+  <data name="AboutVersion" xml:space="preserve">
+    <value>Versão {0}</value>
+  </data>
+  <data name="AboutCredits" xml:space="preserve">
+    <value>Feito com MahApps.Metro e MahApps.Metro.IconPacks (licença MIT).</value>
+  </data>
+  <data name="AboutProject" xml:space="preserve">
+    <value>Página do projeto</value>
+  </data>
+  <data name="AboutCheckUpdates" xml:space="preserve">
+    <value>Verificar atualizações</value>
+  </data>
+  <data name="UpdateChecking" xml:space="preserve">
+    <value>Verificando…</value>
+  </data>
+  <data name="UpdateUpToDate" xml:space="preserve">
+    <value>Você tem a versão mais recente ({0}).</value>
+  </data>
+  <data name="UpdateAvailable" xml:space="preserve">
+    <value>Nova versão {0} disponível (você tem a {1}).</value>
+  </data>
+  <data name="UpdateDownload" xml:space="preserve">
+    <value>Abrir a página de download</value>
+  </data>
+  <data name="UpdateFailed" xml:space="preserve">
+    <value>Não foi possível verificar atualizações. Verifique sua conexão com a Internet.</value>
+  </data>
+  <data name="UpdatePromptOpen" xml:space="preserve">
+    <value>Nova versão {0} disponível (você tem a {1}). Abrir a página de download?</value>
+  </data>
+</root>
