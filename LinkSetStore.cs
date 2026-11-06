@@ -26,7 +26,7 @@ namespace Symlinker
         public ConflictPolicy Policy { get; set; } = ConflictPolicy.Skip;
     }
 
-    /// <summary>Reads and writes favorites in %AppData%\Symlinker\sets.json.</summary>
+    /// <summary>Reads and writes favorites in sets.json (see <see cref="DataPaths"/> for the folder).</summary>
     public static class LinkSetStore
     {
         private static readonly JsonSerializerOptions Options = new()
@@ -35,14 +35,11 @@ namespace Symlinker
             Converters = { new JsonStringEnumConverter() },
         };
 
-        public static string DefaultPath { get; } = Path.Combine(
-            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-            "Symlinker",
-            "sets.json");
+        public static string DefaultPath => DataPaths.FilePath("sets.json");
 
         public static List<LinkSet> Load(string path = null)
         {
-            path ??= DefaultPath;
+            path ??= DataPaths.ReadPath("sets.json");
             if (!File.Exists(path))
             {
                 return new List<LinkSet>();

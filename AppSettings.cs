@@ -4,7 +4,7 @@ namespace Symlinker
     using System.IO;
     using System.Text.Json;
 
-    /// <summary>Small program settings, stored in %AppData%\Symlinker\settings.json.</summary>
+    /// <summary>Small program settings, stored in settings.json (see <see cref="DataPaths"/> for the folder).</summary>
     public class AppSettings
     {
         public DateTime LastUpdateCheckUtc { get; set; }
@@ -20,6 +20,10 @@ namespace Symlinker
         /// <summary>True when the last successful check found a release newer than <paramref name="current"/>.</summary>
         public bool HasUpdate(Version current) =>
             UpdateChecker.ParseVersion(LatestKnownTag) is { } known && UpdateChecker.IsNewer(known, current);
+
+        /// <summary>True when a newer version is known and the user has not been told about it yet.</summary>
+        public bool ShouldAnnounce(Version current) =>
+            HasUpdate(current) && !string.Equals(LastAnnouncedVersion, LatestKnownTag, StringComparison.Ordinal);
 
         /// <summary>The automatic check runs at most once every 24 hours.</summary>
         public bool IsCheckDue(DateTime utcNow) => utcNow - LastUpdateCheckUtc >= TimeSpan.FromHours(24);
@@ -37,14 +41,11 @@ namespace Symlinker
             LatestKnownUrl = result.State == UpdateState.Available ? result.Latest.Url : string.Empty;
         }
 
-        public static string DefaultPath { get; } = Path.Combine(
-            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-            "Symlinker",
-            "settings.json");
+        public static string DefaultPath => DataPaths.FilePath("settings.json");
 
         public static AppSettings Load(string path = null)
         {
-            path ??= DefaultPath;
+            path ??= DataPaths.ReadPath("settings.json");
             try
             {
                 return File.Exists(path)

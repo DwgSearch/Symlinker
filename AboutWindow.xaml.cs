@@ -87,6 +87,11 @@ namespace Symlinker
                 }
 
                 settings.Record(result, DateTime.UtcNow);
+                if (result.State == UpdateState.Available)
+                {
+                    settings.LastAnnouncedVersion = result.Latest.Tag;
+                }
+
                 settings.Save();
             }
             finally

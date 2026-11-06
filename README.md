@@ -6,7 +6,7 @@ A small Windows tool for creating **symbolic links, junctions and hard links in 
 
 You keep two lists. The left one holds the folders where links should be created, and the right one holds the real files and folders. Symlinker shows every link it is about to create, then creates them all in one go. Typical use: a shared data folder that has to appear inside several program folders, or the same set of files linked into every new version of an application.
 
-![Symlinker](docs/screenshot_en.png)
+<!-- Add a screenshot here, e.g. ![Symlinker](docs/screenshot.png) -->
 
 ## Features
 
@@ -18,7 +18,7 @@ You keep two lists. The left one holds the folders where links should be created
 - **Preview before anything happens.** The table lists every planned link with its status: ready, already linked, name already exists, source missing, destination missing, overlap, and so on.
 - **Conflict policy** for names that already exist: *skip*, *overwrite* (removes only links, files and empty folders, and refuses a non-empty real folder), or *back up and replace* (the old item is renamed to `.bak`, `.bak1`, `.bak2`, …).
 - **Safe to re-run.** Links that already point to the right target are recognized and left alone. Overlapping paths (a link that would equal its target, or sit inside it) are refused.
-- **Favorites.** Save the whole setup (both lists, pairs, link type and policy), reload it later and edit it. They are stored in `%AppData%\Symlinker\sets.json`.
+- **Favorites.** Save the whole setup (both lists, pairs, link type and policy), reload it later and edit it. They are stored in a `data` folder next to `Symlinker.exe`, so nothing is scattered around the system. If that folder cannot be written (for example under `C:\Program Files`), `%AppData%\Symlinker` is used instead. When you update by unzipping a new version, keep the `data` folder.
 - **Update check.** At startup (at most once a day) Symlinker looks for a newer release on GitHub and Gitee. If there is one, it tells you once and shows a red dot next to the *About* button until you update. *About → Check for updates* checks on demand. Only release information is read; nothing is downloaded or installed automatically, and a failed check is ignored silently.
 - **Light and dark themes.** The window follows the Windows light/dark mode and accent color.
 - **Nine languages:** English, Deutsch, Español, Français, हिन्दी, Italiano, 日本語, Português and 中文. The language follows the Windows display language, and other languages fall back to English.
@@ -80,7 +80,8 @@ Nothing is changed on disk until you click that button.
 | `LinkService.cs` | Creates the links and applies the conflict policy |
 | `LinkSetStore.cs` | Reads and writes favorites as JSON |
 | `UpdateChecker.cs`, `AppInfo.cs` | Update check against the GitHub and Gitee release feeds; repository names |
-| `AppSettings.cs` | Program settings (`%AppData%\Symlinker\settings.json`) |
+| `AppSettings.cs` | Program settings (`settings.json`) |
+| `DataPaths.cs` | Chooses where `sets.json` and `settings.json` are stored |
 | `AboutWindow.xaml(.cs)` | About box with links and the update check |
 | `Properties/Resources*.resx` | UI strings, one file per language |
 

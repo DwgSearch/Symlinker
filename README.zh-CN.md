@@ -6,7 +6,7 @@
 
 你维护两个列表：左边是要创建链接的位置目录，右边是真实的文件和文件夹。Symlinker 会先列出所有将要创建的链接，确认后一次性全部创建。典型用途：同一份共享数据要出现在多个程序目录里，或者每次新版本软件都要把同一批文件链接进去。
 
-![Symlinker](docs/screenshot_cn.png)
+<!-- 在这里放一张截图，例如 ![Symlinker](docs/screenshot.png) -->
 
 ## 功能
 
@@ -18,7 +18,7 @@
 - **执行前先预览。** 表格列出每个计划中的链接及其状态：可新建、已链接、同名已存在、源不存在、目标目录不存在、路径重叠等。
 - **同名冲突策略：** *跳过*；*覆盖*（只删除链接、文件和空文件夹，遇到非空的真实文件夹会拒绝）；*备份后替换*（旧项改名为 `.bak`、`.bak1`、`.bak2` …）。
 - **可重复执行。** 已经指向正确目标的链接会被识别并跳过。路径重叠的情况（链接等于目标，或位于目标内部）会被拒绝。
-- **收藏。** 保存整套设置（两个列表、配对、链接类型、冲突策略），以后加载并继续编辑。保存位置：`%AppData%\Symlinker\sets.json`。
+- **收藏。** 保存整套设置（两个列表、配对、链接类型、冲突策略），以后加载并继续编辑。保存在程序旁边的 `data` 文件夹里，不会散落到系统各处；如果该文件夹不可写（例如装在 `C:\Program Files` 下），则改用 `%AppData%\Symlinker`。解压新版本更新时，请保留 `data` 文件夹。
 - **检查更新。** 启动时（每天最多一次）会到 GitHub 和 Gitee 查找更新的发行版。发现新版本时弹窗提示一次，并在“关于”按钮旁显示红点，直到你更新为止。在“关于”窗口里也可以点“检查更新”随时检查。只读取发行版信息，不会自动下载或安装；检查失败时静默忽略。
 - **明暗主题。** 窗口跟随 Windows 的明暗模式和主题色。
 - **九种语言：** English、Deutsch、Español、Français、हिन्दी、Italiano、日本語、Português、中文。界面语言跟随 Windows 显示语言，其他语言显示英文。
@@ -80,7 +80,8 @@ dotnet run -- --lang de
 | `LinkService.cs` | 创建链接并执行冲突策略 |
 | `LinkSetStore.cs` | 以 JSON 读写收藏 |
 | `UpdateChecker.cs`、`AppInfo.cs` | 通过 GitHub 和 Gitee 的发行版信息检查更新；仓库名称 |
-| `AppSettings.cs` | 程序设置（`%AppData%\Symlinker\settings.json`） |
+| `AppSettings.cs` | 程序设置（`settings.json`） |
+| `DataPaths.cs` | 决定 `sets.json` 和 `settings.json` 存放在哪里 |
 | `AboutWindow.xaml(.cs)` | “关于”窗口：链接和检查更新 |
 | `Properties/Resources*.resx` | 界面文字，每种语言一个文件 |
 

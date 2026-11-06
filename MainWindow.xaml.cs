@@ -322,45 +322,40 @@ namespace Symlinker
         }
 
         /// <summary>
-        /// At startup, at most once a day: looks for a newer release, remembers the result (for the red dot)
-        /// and tells the user once per version. Any failure is ignored silently.
+        /// At startup: looks for a newer release (at most once a day) and remembers the result for the red dot.
+        /// Then, if a newer version is known and the user was not told about it yet, shows a message once
+        /// per version. This does not depend on when the last check ran, so a version found earlier
+        /// (for example by the About box) is still announced once. Any network failure is ignored silently.
         /// </summary>
         private async Task CheckForUpdatesAtStartupAsync()
         {
             RefreshUpdateBadge();
 
             var settings = AppSettings.Load();
-            if (!settings.IsCheckDue(DateTime.UtcNow))
+            if (settings.IsCheckDue(DateTime.UtcNow))
             {
-                return;
-            }
-
-            var result = await UpdateChecker.CheckAsync();
-            if (result.State == UpdateState.Failed)
-            {
-                return;
-            }
-
-            settings.Record(result, DateTime.UtcNow);
-            var announce = result.State == UpdateState.Available
-                && !string.Equals(settings.LastAnnouncedVersion, result.Latest.Tag, StringComparison.Ordinal);
-            if (announce)
-            {
-                settings.LastAnnouncedVersion = result.Latest.Tag;
-            }
-
-            settings.Save();
-            RefreshUpdateBadge();
-
-            if (announce)
-            {
-                var current = AppInfo.CurrentVersion;
-                var currentText = $"{current.Major}.{current.Minor}.{Math.Max(current.Build, 0)}";
-                if (Confirm(string.Format(CultureInfo.CurrentUICulture, Res.UpdatePromptOpen, result.Latest.Tag, currentText))
-                    && Uri.TryCreate(result.Latest.Url, UriKind.Absolute, out var uri))
+                var result = await UpdateChecker.CheckAsync();
+                if (result.State != UpdateState.Failed)
                 {
-                    AboutWindow.OpenPage(uri);
+                    settings.Record(result, DateTime.UtcNow);
+                    settings.Save();
+                    RefreshUpdateBadge();
                 }
+            }
+
+            var current = AppInfo.CurrentVersion;
+            if (!settings.ShouldAnnounce(current))
+            {
+                return;
+            }
+
+            settings.LastAnnouncedVersion = settings.LatestKnownTag;
+            settings.Save();
+            var currentText = $"{current.Major}.{current.Minor}.{Math.Max(current.Build, 0)}";
+            if (Confirm(string.Format(CultureInfo.CurrentUICulture, Res.UpdatePromptOpen, settings.LatestKnownTag, currentText))
+                && Uri.TryCreate(settings.LatestKnownUrl, UriKind.Absolute, out var uri))
+            {
+                AboutWindow.OpenPage(uri);
             }
         }
 
