@@ -6,7 +6,7 @@ A small Windows tool for creating **symbolic links, junctions and hard links in 
 
 You keep two lists. The left one holds the folders where links should be created, and the right one holds the real files and folders. Symlinker shows every link it is about to create, then creates them all in one go. Typical use: a shared data folder that has to appear inside several program folders, or the same set of files linked into every new version of an application.
 
-<!-- Add a screenshot here, e.g. ![Symlinker](docs/screenshot.png) -->
+![Symlinker](docs/screenshot_en.png)
 
 ## Features
 
